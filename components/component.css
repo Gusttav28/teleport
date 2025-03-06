@@ -1,0 +1,12 @@
+.component-container {
+  display: flex;
+  position: relative;
+}
+ 
+@media(max-width: 479px) {
+  .component-icon1 {
+    left: 216px;
+    bottom: 0px;
+    position: absolute;
+  }
+}

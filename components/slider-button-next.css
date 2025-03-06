@@ -1,0 +1,16 @@
+.slider-button-next-container {
+  display: flex;
+  position: relative;
+}
+ 
+.slider-button-next-slider-button-next {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+  display: block;
+}
+ 
+@media(max-width: 479px) {
+  .slider-button-next-slider-button-next {
+    display: none;
+  }
+}

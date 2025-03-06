@@ -1,0 +1,17 @@
+.slider-button-prev-container {
+  display: flex;
+  position: relative;
+}
+ 
+.slider-button-prev-slider-button-prev {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+  display: block;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+ 
+@media(max-width: 479px) {
+  .slider-button-prev-slider-button-prev {
+    display: none;
+  }
+}

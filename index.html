@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="stats-card-container1">
+        <language-name-wrapper class="language-name-wrapper">
+          <!--LanguageName component-->
+          <div class="language-name-container"></div>
+        </language-name-wrapper>
+        <div class="stats-card-container2">
+          <div class="stats-card-container3">
+            <div class="stats-card-container4"></div>
+          </div>
+        </div>
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          class="stats-card-icon10"
+        >
+          <path
+            d="M7.95 11.95h32m-32 12h32m-32 12h32"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        <div data-thq="thq-navbar-nav" class="stats-card-desktop-menu1"></div>
+        <div class="stats-card-stats-card">
+          <div class="stats-card-container5">
+            <img
+              alt="ClockI205"
+              src="public/external/clocki205-4955.svg"
+              class="stats-card-clock"
+            />
+          </div>
+          <div class="stats-card-text-heading">
+            <span class="stats-card-text10 Heading">100</span>
+          </div>
+          <span class="stats-card-text11 BodyBase">Hi! This is a test</span>
+        </div>
+        <content-list1-wrapper class="content-list1-wrapper">
+          <!--ContentList1 component-->
+          <div class="content-list1-container thq-section-padding">
+            <div class="content-list1-max-width thq-section-max-width">
+              <div class="content-list1-content thq-flex-column">
+                <ul class="content-list1-ul thq-flex-column">
+                  <li class="thq-flex-column list-item">
+                    <h2 class="content-list1-heading1 thq-heading-2">
+                      <fragment class="stats-card-fragment16">
+                        <span class="stats-card-text18">Privacy statement</span>
+                      </fragment>
+                    </h2>
+                    <p class="thq-body-small">
+                      <fragment class="stats-card-fragment10">
+                        <span class="stats-card-text12">
+                          Lorem ipsum dolor sit amet. Vel dolores illum est
+                          aperiam quis nam voluptatem quia et omnis autem qui
+                          dolore ullam sed fugiat cumque! Qui accusamus
+                          assumenda et molestias eius et error sunt. Id
+                          recusandae nostrum ea officiis voluptatem in nisi
+                          consequatur sed quia tenetur sit alias molestias qui
+                          illum soluta. Est nesciunt perferendis eum sint rerum
+                          33 cupiditate dolorem id corrupti laboriosam ut
+                          debitis veniam ut ipsam fugit vel sunt consequatur. Et
+                          nobis quasi et cumque adipisci aut molestiae eligendi
+                          quo inventore dicta ea suscipit sequi sed veritatis
+                          nemo.
+                        </span>
+                      </fragment>
+                    </p>
+                  </li>
+                  <li class="list-item">
+                    <h3 class="thq-heading-3">
+                      <fragment class="stats-card-fragment17">
+                        <span class="stats-card-text19">
+                          Types of data we collect
+                        </span>
+                      </fragment>
+                    </h3>
+                    <p class="thq-body-small">
+                      <fragment class="stats-card-fragment11">
+                        <span class="stats-card-text13">
+                          Lorem ipsum dolor sit amet. Nam nihil facilis sit
+                          consequuntur internos qui minima rerum ut molestias
+                          laudantium aut iusto deserunt. Aut voluptatibus
+                          excepturi qui officia laudantium est repellendus
+                          tempore hic sunt debitis. Ut galisum tempore in enim
+                          fugit eum pariatur possimus est tenetur nemo et sint
+                          sint et dolores Quis. Aut illum perspiciatis rem
+                          architecto culpa et fuga aliquid. Est omnis
+                          praesentium ut nisi internos rem quod totam et
+                          similique quis. Est tempore cumque aut recusandae
+                          labore qui error molestiae et possimus quia! Eum Quis
+                          asperiores non nihil tempora qui quia voluptatem aut
+                          aspernatur aspernatur aut asperiores labore et
+                          sapiente quaerat qui suscipit quia. Ea nesciunt iste
+                          aut temporibus culpa sit dignissimos quaerat eum
+                          architecto voluptatum et nemo velit At harum harum.
+                        </span>
+                      </fragment>
+                    </p>
+                  </li>
+                  <li class="list-item">
+                    <h3 class="thq-heading-3">
+                      <fragment class="stats-card-fragment18">
+                        <span class="stats-card-text20">
+                          How we use your data
+                        </span>
+                      </fragment>
+                    </h3>
+                    <p class="thq-body-small">
+                      <fragment class="stats-card-fragment12">
+                        <span class="stats-card-text14">
+                          Lorem ipsum dolor sit amet. Est vitae blanditiis ab
+                          aliquam tempore aut ipsam iusto in sunt repellat ex
+                          voluptatum inventore ab facilis galisum ea consequatur
+                          consequuntur. Ab voluptas voluptatem eum consequatur
+                          aspernatur non laboriosam atque est labore asperiores
+                          a neque quos. Ea nemo modi hic dicta saepe et
+                          veritatis maiores At praesentium aliquid. Sed dolores
+                          architecto non doloribus quia eos consectetur commodi
+                          non tenetur vitae est neque omnis. Non perspiciatis
+                          velit At aliquam rerum ut officiis ipsa id minima eius
+                          ut sapiente nobis et nemo neque. Aut maiores tempora
+                          in officiis sunt eum voluptatem tenetur sit iste
+                          reprehenderit ea nisi dolor. Ea impedit omnis ad
+                          internos autem ut esse sunt ad saepe maiores vel
+                          perferendis veritatis. Ex magni fugiat ut
+                          reprehenderit laudantium sit galisum ipsam eos tempora
+                          doloribus sed accusantium nobis eum praesentium quod.
+                        </span>
+                      </fragment>
+                    </p>
+                  </li>
+                  <li class="list-item">
+                    <h3 class="thq-heading-3">
+                      <fragment class="stats-card-fragment19">
+                        <span class="stats-card-text21">
+                          Sharing your data with 3rd parties
+                        </span>
+                      </fragment>
+                    </h3>
+                    <p class="thq-body-small">
+                      <fragment class="stats-card-fragment13">
+                        <span class="stats-card-text15">
+                          Lorem ipsum dolor sit amet. Id galisum officiis rem
+                          quod internos qui provident quaerat hic minus eveniet
+                          est officiis galisum sit rerum dignissimos. Sit
+                          voluptatem alias et veniam rerum ea quod ipsam ut quam
+                          neque est nihil repellat est aspernatur voluptatem est
+                          voluptas ratione? Ea vero tempore At soluta temporibus
+                          33 galisum excepturi quo modi distinctio. Qui dolor
+                          soluta sit ipsam vitae et suscipit molestiae est
+                          consequatur galisum aut sapiente voluptatem sed quas
+                          eaque et minima minus? Rem soluta consequatur et velit
+                          cupiditate sed eligendi laudantium rem pariatur
+                          galisum sit mollitia debitis eum delectus ipsum aut
+                          consequatur mollitia. Qui voluptatibus molestias ut
+                          totam Quis ea unde dolorem sit animi eveniet et
+                          galisum explicabo. Est culpa error ut voluptatibus
+                          voluptatem qui dignissimos dolorem quo laborum
+                          distinctio qui omnis perspiciatis ab facilis
+                          temporibus qui perspiciatis consectetur. Ab
+                          praesentium fugiat eos veritatis quam ex modi autem et
+                          sapiente dolorem?
+                        </span>
+                      </fragment>
+                    </p>
+                  </li>
+                  <li class="list-item">
+                    <h3 class="thq-heading-3">
+                      <fragment class="stats-card-fragment20">
+                        <span class="stats-card-text22">Campaign tracking</span>
+                      </fragment>
+                    </h3>
+                    <p class="thq-body-small">
+                      <fragment class="stats-card-fragment14">
+                        <span class="stats-card-text16">
+                          Lorem ipsum dolor sit amet. Ut cumque cupiditate eos
+                          perferendis tempora et ullam quis qui fugiat
+                          necessitatibus qui quia dolorem 33 earum reprehenderit
+                          eum rerum blanditiis. Et vitae distinctio 33 magni
+                          ratione ut odit rerum est nihil error et minus dolor
+                          quo harum fugiat. Eos quam assumenda id fugit optio
+                          aut magni sunt! Ut iure aliquam vel velit modi sit
+                          voluptatibus atque ut corporis sint sit omnis enim a
+                          pariatur officiis aut nulla voluptate. In facere
+                          incidunt aut sapiente maxime qui quibusdam facilis non
+                          officia consectetur sit laboriosam libero aut
+                          cupiditate possimus ut sunt reiciendis. Et repudiandae
+                          magnam aut quaerat ipsam aut repellat laboriosam. Ab
+                          facilis deleniti ut voluptas molestiae sed omnis
+                          maiores ut aliquid culpa vel nesciunt saepe. Aut
+                          placeat aspernatur aut alias nihil vel neque
+                          recusandae et corrupti accusantium ab quod temporibus
+                          ut nulla eaque et magnam nemo. Ad sunt minus rem earum
+                          delectus hic officia iste qui sunt quos non officiis
+                          illo vel doloribus perspiciatis. Ab soluta eius sed
+                          quidem dolores rem necessitatibus minus 33 minus
+                          commodi. Nam repudiandae libero non laboriosam
+                          voluptate et saepe fuga vel repudiandae pariatur aut
+                          assumenda illo.
+                        </span>
+                      </fragment>
+                    </p>
+                  </li>
+                  <li class="list-item">
+                    <h3 class="thq-heading-3">
+                      <fragment class="stats-card-fragment21">
+                        <span class="stats-card-text23">Cookies</span>
+                      </fragment>
+                    </h3>
+                    <p class="thq-body-small">
+                      <fragment class="stats-card-fragment15">
+                        <span class="stats-card-text17">
+                          Ut doloremque aliquam qui veniam deserunt sit
+                          voluptates iusto et unde quod ut quam unde ut nemo
+                          eius! Ut saepe consequuntur non quibusdam soluta aut
+                          maiores eaque et rerum error nam incidunt saepe aut
+                          nihil voluptatem. 33 nulla quaerat est doloremque
+                          voluptatem ut libero magnam id placeat aliquid. Ea
+                          minus totam est inventore minus sed temporibus aperiam
+                          At ratione maiores eum libero consequatur aut laborum
+                          exercitationem.
+                        </span>
+                      </fragment>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </content-list1-wrapper>
+        <gallery10-wrapper class="gallery10-wrapper">
+          <!--Gallery10 component-->
+          <div class="gallery10-gallery3 thq-section-padding">
+            <div class="gallery10-max-width thq-section-max-width">
+              <div class="gallery10-section-title">
+                <h2 class="gallery10-text1 thq-heading-2">
+                  <fragment class="stats-card-fragment23">
+                    <span class="stats-card-text25">Photo Gallery</span>
+                  </fragment>
+                </h2>
+                <span class="gallery10-text2 thq-body-large">
+                  <fragment class="stats-card-fragment22">
+                    <span class="stats-card-text24">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="gallery10-container">
+                <div class="gallery10-content">
+                  <img
+                    alt="PlaceholderImage1302"
+                    src="https://images.unsplash.com/photo-1561212044-bac5ef688a07?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIyfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="gallery10-image1 thq-img-ratio-4-6"
+                  />
+                  <img
+                    alt="image6"
+                    src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fGFic3RyYWN0fGVufDB8fHx8MTcxMjc0NTExMHww&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="gallery10-image2 thq-img-ratio-4-6"
+                  />
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1617140237060-d09a58ba8edd?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDgzfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA5Mjg2MTV8MA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="gallery10-image6 thq-img-ratio-4-6"
+                  />
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1564089957880-517edea1afc5?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDc0fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA5Mjg2MTV8MA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="gallery10-image7 thq-img-ratio-4-6"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </gallery10-wrapper>
+        <sign-in2-wrapper class="sign-in2-wrapper">
+          <!--SignIn2 component-->
+          <div class="sign-in2-container1 thq-section-padding">
+            <div class="sign-in2-max-width thq-section-max-width">
+              <div class="sign-in2-form-root">
+                <h2 class="sign-in2-text10 thq-heading-2">
+                  <fragment class="stats-card-fragment27">
+                    <span class="stats-card-text29">Sign in</span>
+                  </fragment>
+                </h2>
+                <div class="sign-in2-container2">
+                  <button class="sign-in2-button1 thq-button-outline">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="sign-in2-icon1"
+                    >
+                      <path
+                        d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
+                      ></path>
+                    </svg>
+                    <span class="thq-body-small">Continue with Facebook</span>
+                  </button>
+                  <button class="sign-in2-button2 thq-button-outline">
+                    <svg
+                      viewBox="0 0 860.0137142857142 1024"
+                      class="sign-in2-icon3"
+                    >
+                      <path
+                        d="M438.857 449.143h414.286c4 22.286 6.857 44 6.857 73.143 0 250.286-168 428.571-421.143 428.571-242.857 0-438.857-196-438.857-438.857s196-438.857 438.857-438.857c118.286 0 217.714 43.429 294.286 114.857l-119.429 114.857c-32.571-31.429-89.714-68-174.857-68-149.714 0-272 124-272 277.143s122.286 277.143 272 277.143c173.714 0 238.857-124.571 249.143-189.143h-249.143v-150.857z"
+                      ></path>
+                    </svg>
+                    <span class="thq-body-small">Continue with Google</span>
+                  </button>
+                </div>
+                <div class="sign-in2-divider1">
+                  <div class="sign-in2-divider2"></div>
+                  <span class="thq-body-large">OR</span>
+                  <div class="sign-in2-divider3"></div>
+                </div>
+                <div class="sign-in2-form1">
+                  <form class="sign-in2-form2">
+                    <div class="sign-in2-email">
+                      <label for="thq-sign-in-2-email" class="thq-body-large">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        id="thq-sign-in-2-email"
+                        required="true"
+                        placeholder="Email address"
+                        class="sign-in2-textinput1 thq-body-large thq-input"
+                      />
+                    </div>
+                    <div class="sign-in2-password">
+                      <div class="sign-in2-container3">
+                        <label
+                          for="thq-sign-in-2-password"
+                          class="thq-body-large"
+                        >
+                          Password
+                        </label>
+                        <div class="sign-in2-hide-password">
+                          <svg viewBox="0 0 1024 1024" class="sign-in2-icon5">
+                            <path
+                              d="M317.143 762.857l44.571-80.571c-66.286-48-105.714-125.143-105.714-206.857 0-45.143 12-89.714 34.857-128.571-89.143 45.714-163.429 117.714-217.714 201.714 59.429 92 143.429 169.143 244 214.286zM539.429 329.143c0-14.857-12.571-27.429-27.429-27.429-95.429 0-173.714 78.286-173.714 173.714 0 14.857 12.571 27.429 27.429 27.429s27.429-12.571 27.429-27.429c0-65.714 53.714-118.857 118.857-118.857 14.857 0 27.429-12.571 27.429-27.429zM746.857 220c0 1.143 0 4-0.571 5.143-120.571 215.429-240 432-360.571 647.429l-28 50.857c-3.429 5.714-9.714 9.143-16 9.143-10.286 0-64.571-33.143-76.571-40-5.714-3.429-9.143-9.143-9.143-16 0-9.143 19.429-40 25.143-49.714-110.857-50.286-204-136-269.714-238.857-7.429-11.429-11.429-25.143-11.429-39.429 0-13.714 4-28 11.429-39.429 113.143-173.714 289.714-289.714 500.571-289.714 34.286 0 69.143 3.429 102.857 9.714l30.857-55.429c3.429-5.714 9.143-9.143 16-9.143 10.286 0 64 33.143 76 40 5.714 3.429 9.143 9.143 9.143 15.429zM768 475.429c0 106.286-65.714 201.143-164.571 238.857l160-286.857c2.857 16 4.571 32 4.571 48zM1024 548.571c0 14.857-4 26.857-11.429 39.429-17.714 29.143-40 57.143-62.286 82.857-112 128.571-266.286 206.857-438.286 206.857l42.286-75.429c166.286-14.286 307.429-115.429 396.571-253.714-42.286-65.714-96.571-123.429-161.143-168l36-64c70.857 47.429 142.286 118.857 186.857 192.571 7.429 12.571 11.429 24.571 11.429 39.429z"
+                            ></path>
+                          </svg>
+                          <span class="thq-body-small">Hide</span>
+                        </div>
+                      </div>
+                      <input
+                        type="password"
+                        id="thq-sign-in-2-password"
+                        required="true"
+                        placeholder="Password"
+                        class="sign-in2-textinput2 thq-body-large thq-input"
+                      />
+                    </div>
+                  </form>
+                  <div class="sign-in2-container4">
+                    <button
+                      type="submit"
+                      class="sign-in2-button3 thq-button-filled"
+                    >
+                      <span class="sign-in2-text17 thq-body-small">
+                        <fragment class="stats-card-fragment24">
+                          <span class="stats-card-text26">Sign in</span>
+                        </fragment>
+                      </span>
+                    </button>
+                    <div class="sign-in2-terms-agree">
+                      <p class="thq-body-large">
+                        By continuing, you agree to the Terms of use and Privacy
+                        Policy.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sign-in2-have-an-account-login"></div>
+                </div>
+              </div>
+              <div class="sign-in2-container5">
+                <div class="sign-in2-divider4"></div>
+                <span class="thq-body-large">
+                  <fragment class="stats-card-fragment26">
+                    <span class="stats-card-text28">
+                      Don't have an account?
+                    </span>
+                  </fragment>
+                </span>
+                <button
+                  type="button"
+                  class="sign-in2-button4 thq-button-outline"
+                >
+                  <span class="sign-in2-text20 thq-body-small">
+                    <fragment class="stats-card-fragment25">
+                      <span class="stats-card-text27">Create an account</span>
+                    </fragment>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </sign-in2-wrapper>
+        <contact1-wrapper class="contact1-wrapper">
+          <!--Contact1 component-->
+          <div class="contact1-contact20 thq-section-padding">
+            <div class="contact1-max-width thq-section-max-width">
+              <div class="contact1-content1">
+                <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                  <path
+                    d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                  ></path>
+                </svg>
+                <div class="contact1-contact-info1">
+                  <div class="contact1-content2">
+                    <h3 class="contact1-text10 thq-heading-3">Email</h3>
+                    <p class="contact1-text11 thq-body-large">
+                      <fragment class="stats-card-fragment31">
+                        <span class="stats-card-text33">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in ero.
+                        </span>
+                      </fragment>
+                    </p>
+                  </div>
+                  <span class="contact1-email thq-body-small">
+                    <fragment class="stats-card-fragment28">
+                      <span class="stats-card-text30">
+                        swivelarchitectsystems@swivelarchtsys.com
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+              <div class="contact1-content3">
+                <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                  <path
+                    d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                  ></path>
+                </svg>
+                <div class="contact1-contact-info2">
+                  <div class="contact1-content4">
+                    <h3 class="contact1-text12 thq-heading-3">Phone</h3>
+                    <p class="contact1-text13 thq-body-large">
+                      <fragment class="stats-card-fragment32">
+                        <span class="stats-card-text34">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in ero.
+                        </span>
+                      </fragment>
+                    </p>
+                  </div>
+                  <span class="contact1-phone thq-body-small">
+                    <fragment class="stats-card-fragment29">
+                      <span class="stats-card-text31">+506 60266696</span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+              <div class="contact1-content5">
+                <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                  <path
+                    d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                  ></path>
+                </svg>
+                <div class="contact1-contact-info3">
+                  <div class="contact1-content6">
+                    <h3 class="contact1-text14 thq-heading-3">Office</h3>
+                    <p class="contact1-text15 thq-body-large">
+                      <fragment class="stats-card-fragment33">
+                        <span class="stats-card-text35">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in ero.
+                        </span>
+                      </fragment>
+                    </p>
+                  </div>
+                  <span class="contact1-address thq-body-small">
+                    <fragment class="stats-card-fragment30">
+                      <span class="stats-card-text32">Rohrmoser</span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </contact1-wrapper>
+        <header data-thq="thq-navbar" class="stats-card-navbar-interactive">
+          <img
+            alt="logo"
+            src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+            class="stats-card-image"
+          />
+          <div data-thq="thq-navbar-nav" class="stats-card-desktop-menu2">
+            <nav class="stats-card-links1">
+              <span>About</span>
+              <span class="stats-card-text37">Features</span>
+              <span class="stats-card-text38">Pricing</span>
+              <span class="stats-card-text39">Team</span>
+              <span class="stats-card-text40">Blog</span>
+            </nav>
+            <div class="stats-card-buttons1">
+              <button class="stats-card-login1 button">Login</button>
+              <button class="button">Register</button>
+            </div>
+          </div>
+          <div data-thq="thq-burger-menu" class="stats-card-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="stats-card-icon12">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="stats-card-mobile-menu">
+            <div class="stats-card-nav">
+              <div class="stats-card-top">
+                <img
+                  alt="image"
+                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                  class="stats-card-logo"
+                />
+                <div data-thq="thq-close-menu" class="stats-card-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="stats-card-icon14">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav class="stats-card-links2">
+                <span class="stats-card-text41">About</span>
+                <span class="stats-card-text42">Features</span>
+                <span class="stats-card-text43">Pricing</span>
+                <span class="stats-card-text44">Team</span>
+                <span class="stats-card-text45">Blog</span>
+              </nav>
+              <div class="stats-card-buttons2">
+                <button class="stats-card-login2 button">Login</button>
+                <button class="button">Register</button>
+              </div>
+            </div>
+            <div>
+              <svg
+                viewBox="0 0 950.8571428571428 1024"
+                class="stats-card-icon16"
+              >
+                <path
+                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                ></path></svg
+              ><svg
+                viewBox="0 0 877.7142857142857 1024"
+                class="stats-card-icon18"
+              >
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path></svg
+              ><svg
+                viewBox="0 0 602.2582857142856 1024"
+                class="stats-card-icon20"
+              >
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
